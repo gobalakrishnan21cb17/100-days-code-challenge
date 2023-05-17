@@ -19,3 +19,25 @@ for value in simpleGeneratorFun():
 calc = lambda num: "Even number" if num % 2 == 0 else "Odd number"
  
 print(calc(20))
+
+# -----------------------------------------------------.
+
+def f():
+     
+    # local variable
+    s = "I love Geeksforgeeks"
+    print(s)
+ 
+ 
+# Driver code
+f()
+
+
+# This function uses global variable s
+def f():
+    print("Inside Function", s)
+ 
+# Global scope
+s = "I love Geeksforgeeks"
+f()
+print("Outside Function", s)
